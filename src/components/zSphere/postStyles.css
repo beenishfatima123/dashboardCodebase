@@ -1,0 +1,17 @@
+.comments-input {
+  display: flex;
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  background: none;
+  color: #6b7b88;
+  font-family: medium;
+}
+.comments-input:focus {
+  outline: none;
+}
+.comments-input::placeholder {
+  color: #6b7b88;
+  font-size: 14px;
+  font-family: medium;
+}

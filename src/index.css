@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "light";
+}
+/* scrollbar styling start*/
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #014493;
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: 'light';
+  src: local('HelveticaLTStd-Light'),
+    url('./assets/fonts/HelveticaLTStd-Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'medium';
+  src: local('HelveticaNeueLTStd-Roman'),
+    url('./assets/fonts/HelveticaNeueLTStd-Roman.otf') format('truetype');
+}
+@font-face {
+  font-family: 'heavy';
+  src: local('HelveticaLTStd-Bold'),
+    url('./assets/fonts/HelveticaLTStd-Bold.otf') format('truetype');
+}

@@ -1,0 +1,66 @@
+.select-items div,
+.select-selected {
+  color: #134696;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.listingsSelectDiv {
+  position: relative;
+}
+
+.listingsSelectDiv:after {
+  color: #0ebeff;
+  right: 10px;
+  top: 45%;
+  height: 34px;
+  position: absolute;
+  pointer-events: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #134696;
+  content: "";
+  z-index: 98;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+
+.listingsSelectDiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  border: 1px solid #c1cfd9;
+  font-family: medium;
+  height: 56px;
+  min-width: 100%;
+  margin-top: 10px;
+  /* width: 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -ms-word-break: normal;
+  word-break: normal;
+  padding: 15px 10px;
+  text-transform: capitalize;
+  color: #134696;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.listingsSelectDiv select:focus {
+  outline: none;
+}
+.my-listings-background-image {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,26 @@
+.background-image {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 280px;
+}
+.slider-container {
+  position: relative;
+  width: 100% !important;
+}
+.dots-container-custom {
+  top: 25px !important;
+}
+.dots-container-custom .paging-item{
+  margin: 0px 5px !important
+}
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

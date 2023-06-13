@@ -1,0 +1,79 @@
+.login-input {
+  display: flex;
+  flex: 1;
+  border: none;
+  font-size: 12;
+  background: none;
+  color: #134696;
+  font-family: medium;
+}
+.login-input:focus {
+  outline: none;
+}
+.login-input::placeholder {
+  color: #7d7d7d;
+  font-size: 12;
+  font-family: medium;
+}
+.login-checkbox {
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .login-checkbox {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .login-checkbox {
+  background-color: #2196f3;
+}
+
+/* Create the login-checkbox/indicator (hidden when not checked) */
+.login-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the login-checkbox when checked */
+.container input:checked ~ .login-checkbox:after {
+  display: block;
+}
+
+/* Style the login-checkbox/indicator */
+.container .login-checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.account-select {
+  border: none;
+  width: 100%;
+  font-size: 12;
+  color: #134696;
+  font-family: medium;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-select:focus {
+  outline: none;
+}
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
